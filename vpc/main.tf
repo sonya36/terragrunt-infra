@@ -15,3 +15,7 @@ resource "aws_vpc" "my_vpc" {
 output "vpc_id" {
   value = aws_vpc.my_vpc.id
 }
+
+terraform {
+  backend "s3" {}
+}
